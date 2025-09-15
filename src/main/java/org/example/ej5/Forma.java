@@ -7,7 +7,7 @@ public abstract class Forma implements ICalculable {
     protected String color;
 
     //poner el constructor
-    public Forma(String color) {
+    Forma(String color) {
         this.color = color;
     }
 
