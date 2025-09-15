@@ -2,7 +2,7 @@ package org.example.ej5;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public abstract class Forma {
+public abstract class Forma implements ICalculable {
     //protected para los hijos
     protected String color;
 
@@ -13,10 +13,7 @@ public abstract class Forma {
 
     //no static
     public void mostrarColor() {
-        System.out.print(color);
+        System.out.println(color);
     }
 
-    public abstract double calcularArea();
-
-    public abstract double calvularPerimetro();
 }

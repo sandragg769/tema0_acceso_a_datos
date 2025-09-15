@@ -1,6 +1,6 @@
 package org.example.ej5;
 
-public class Circulo extends Forma {
+public class Circulo extends Forma implements ICalculable {
     private double radio;
 
     public Circulo(String color, double radio) {
@@ -19,7 +19,7 @@ public class Circulo extends Forma {
     }
 
     @Override
-    public double calvularPerimetro() {
+    public double calcularPerimetro() {
         return 2 * Math.PI * radio;
     }
 }

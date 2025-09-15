@@ -1,6 +1,7 @@
 package org.example.ej5;
 
-public class Rectangulo extends Forma {
+//inmutabilidad de la clase se pone final antes de class
+public class Rectangulo extends Forma implements ICalculable {
     private double ancho;
     private double altura;
 
@@ -16,7 +17,7 @@ public class Rectangulo extends Forma {
     }
 
     @Override
-    public double calvularPerimetro() {
+    public double calcularPerimetro() {
         return 2 * ancho + 2 * altura;
     }
 }
